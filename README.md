@@ -1,8 +1,10 @@
 # Companion Jupyter notebooks for the book "Deep Learning with Python"
+[![Cloud GPU](https://img.shields.io/badge/Run%20on-FloydHub-blue.svg)](https://www.floydhub.com/redeipirati/projects/deep-learning-with-python-notebooks)
 
 This repository contains Jupyter notebooks implementing the code samples found in the book [Deep Learning with Python (Manning Publications)](https://www.manning.com/books/deep-learning-with-python?a_aid=keras&a_bid=76564dff). Note that the original text of the book features far more content than you will find in these notebooks, in particular further explanations and figures. Here we have only included the code samples themselves and immediately related surrounding comments.
 
 These notebooks use Python 3.6 and Keras 2.0.8. They were generated on a p2.xlarge EC2 instance.
+
 
 ## Table of contents
 
@@ -32,3 +34,27 @@ These notebooks use Python 3.6 and Keras 2.0.8. They were generated on a p2.xlar
     * [8.4: Generating images with VAEs](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/8.4-generating-images-with-vaes.ipynb)
     * [8.5: Introduction to GANs](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/8.5-introduction-to-gans.ipynb
 )
+
+
+## Run on FloydHub
+
+You can easily run these code samples on GPU-powered Jupyter notebooks with [FloydHub](https://www.floydhub.com/). [Install](https://docs.floydhub.com/getstarted/quick_start/) the `floyd-cli` command line tool and run these commands to get started:
+
+```
+# Create a new folder for the project
+mkdir deep-learning
+cd deep-learning
+
+# Clone the existing project from FloydHub
+floyd clone redeipirati/projects/deep-learning-with-python-notebooks/25
+
+# Initialize the project folder
+floyd init deep-learning
+
+# Run an interactive GPU instance with everything you need
+floyd run \
+  --env tensorflow-1.4 \
+  --data redeipirati/datasets/cats_and_dogs_small/1:input \
+  --mode jupyter \
+  --gpu
+```
