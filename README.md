@@ -32,3 +32,32 @@ These notebooks use Python 3.6 and Keras 2.0.8. They were generated on a p2.xlar
     * [8.4: Generating images with VAEs](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/8.4-generating-images-with-vaes.ipynb)
     * [8.5: Introduction to GANs](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/8.5-introduction-to-gans.ipynb
 )
+
+
+## Run on Polyaxon
+
+In order to run these Jupyter notebooks on Polyaxon: 
+
+ * Deploy [Polyaxon](https://docs.polyaxon.com/installation/deploy_polyaxon/)
+ * Install the [polyaxon-cli](https://docs.polyaxon.com/installation/install_polyaxon_cli/)
+ * To run the notebooks on GPU use `polyaxonfile_gpu.yml` instead of `polyaxonfile.yml`
+
+
+```bash
+# Clone the project 
+git clone https://github.com/polyaxon/deep-learning-with-python-notebooks-on-polyaxon.git
+
+cd deep-learning-with-python-notebooks-on-polyaxon
+
+# Login to polyaxon
+polyaxon login --username=<USERNAME>
+
+# Create Project
+polyaxon project create --name='deep-learning-with-python-notebooks-on-polyaxon' --description='Jupyter notebooks for the code samples of the book "Deep Learning with Python" on Polyaxon'
+
+# Init the project
+polyaxon init deep-learning-with-python-notebooks-on-polyaxon
+
+# Start the Jupyter notebook on polyaxon with the notebooks
+polyaxon notebook start -f polyaxonfile.yml -u
+```
