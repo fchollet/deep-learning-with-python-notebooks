@@ -1,8 +1,7 @@
 ---
 version: 1
 
-project:
-  name: deep-learning-with-python-notebooks-on-polyaxon
+kind: plugin
 
 run:
   image: tensorflow/tensorflow:1.4.1-gpu-py3
