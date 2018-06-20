@@ -32,3 +32,10 @@ These notebooks use Python 3.6 and Keras 2.0.8. They were generated on a p2.xlar
     * [8.4: Generating images with VAEs](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/8.4-generating-images-with-vaes.ipynb)
     * [8.5: Introduction to GANs](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/8.5-introduction-to-gans.ipynb
 )
+
+
+## Try it now
+
+[![Run on FloydHub](https://static.floydhub.com/button/button.svg)](https://floydhub.com/run)
+
+Click this button to run these notebooks in a GPU-powered JupyterLab environment

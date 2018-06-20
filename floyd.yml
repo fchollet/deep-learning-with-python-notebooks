@@ -1,0 +1,5 @@
+env: tensorflow-1.8
+machine: gpu
+input:
+  - source: redeipirati/datasets/cats_and_dogs_small/1
+    destination: input
