@@ -1,9 +1,12 @@
 ---
 version: 1
 
-kind: plugin
+kind: notebook
 
-run:
+project:
+  name: deep-learning-with-python-notebooks-on-polyaxon
+
+build:
   image: tensorflow/tensorflow:1.4.1-py3
   steps:
     - pip3 install --no-cache-dir -U polyaxon-helper
