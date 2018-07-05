@@ -3,9 +3,6 @@ version: 1
 
 kind: notebook
 
-project:
-  name: deep-learning-with-python-notebooks-on-polyaxon
-
 build:
   image: tensorflow/tensorflow:1.4.1-gpu-py3
   steps:
