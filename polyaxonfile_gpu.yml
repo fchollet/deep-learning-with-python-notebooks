@@ -1,0 +1,10 @@
+---
+version: 1
+
+kind: notebook
+
+build:
+  image: tensorflow/tensorflow:1.4.1-gpu-py3
+  steps:
+    - pip3 install --no-cache-dir -U polyaxon-helper
+    - pip3 install jupyter
