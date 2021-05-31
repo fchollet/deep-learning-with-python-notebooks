@@ -25,6 +25,10 @@ These notebooks use Python 3.6 and Keras 2.0.8. They were generated on a p2.xlar
     * [6.2: Understanding RNNs](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/6.2-understanding-recurrent-neural-networks.ipynb)
     * [6.3: Advanced usage of RNNs](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/6.3-advanced-usage-of-recurrent-neural-networks.ipynb)
     * [6.4: Sequence processing with convnets](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/6.4-sequence-processing-with-convnets.ipynb)
+* Chapter 7:
+     * [7.1.1 Introduction to functional API]
+     * [7.1.2 Build a concatenate network]
+     * [7.1.3. Multi-output model]
 * Chapter 8:
     * [8.1: Text generation with LSTM](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/8.1-text-generation-with-lstm.ipynb)
     * [8.2: Deep dream](http://nbviewer.jupyter.org/github/fchollet/deep-learning-with-python-notebooks/blob/master/8.2-deep-dream.ipynb)
