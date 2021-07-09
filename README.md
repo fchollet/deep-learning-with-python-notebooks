@@ -5,7 +5,7 @@ This repository contains Jupyter notebooks implementing the code samples found i
 For readability, these notebooks only contain runnable code blocks and section titles, and omit everything else in the book: text paragraphs, figures, and pseudocode.
 **If you want to be able to follow what's going on, I recommend reading the notebooks side by side with your copy of the book.**
 
-These notebooks use Python 3.7 and Keras 2.0.8. They were generated on a p2.xlarge EC2 instance.
+These notebooks use TensorFlow 2.6.
 
 ## Table of contents
 
